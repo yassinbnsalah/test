@@ -1,3 +1,5 @@
 <h1> Legume du {{date}} </h1>
-<yes-legume [leg] = "lesLegumes"></yes-legume>
+<ng-container *ngFor="let l of lesLegumes"></ng-container>
+<yes-legume [leg] = "l"></yes-legume>
+</ng-container>
 <button class="btn btn-primary" (click)="nombrefrais()"> nb de legume fraiss  </button>
