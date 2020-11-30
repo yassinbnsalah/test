@@ -8,9 +8,9 @@ import { Legume } from 'src/app/model/legume';
 })
 export class LeslegumesComponent implements OnInit {
   lesLegumes : Legume[]= [ 
-    {photo: 'assets/Legumes/salade.jpg', libelle:'Salade', prix:1.5, frais:false},
-    {photo:'assets/Legumes/tomate.jpg',libelle: 'Tomates', prix:2.8,frais: true},
-    {photo:'assets/Legumes/poivron.jpg', libelle:'Poivrons', prix:3.5, frais:true} 
+    {photo: 'assets/salade.jpg', libelle:'Salade', prix:1.5, frais:false},
+    {photo:'assets/tomate.jpg',libelle: 'Tomates', prix:2.8,frais: true},
+    {photo:'assets/poivron.jpg', libelle:'Poivrons', prix:3.5, frais:true} 
   ];
   date!: Date; 
   constructor() { }
@@ -25,7 +25,7 @@ let x : number = 0  ;
       x++ ; 
     }    
   }
-  return x ; 
+ return x ;  
 }
   ngOnInit(): void {
   }
